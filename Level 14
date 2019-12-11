@@ -14,3 +14,6 @@ To make it easier, you can use pipelining. Do echo <password> | nc... stuff. The
 echoes it (check man echo if you don't know it) to the localhost. Then you are given the password to level 15.
 
 (Looks like the thing you write first is executed second - writing echo after nc doesn't work it just prints it in your terminal.)
+ 
+ Update:
+You can also check the man page of the telnet command, and you can figure out that typing in the same format (telnet host port) will bring the same results
