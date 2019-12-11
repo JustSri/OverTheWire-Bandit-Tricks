@@ -9,3 +9,7 @@ you'd have to type kill for that to work.
 So now we have to somehow not call bashrc file to be opened but connect to the remote host.
 Use ssh -T.Then it doesn't open what we call a pseudo-terminal. Basically you're left with the text terminal.
 So just use this and then type cat readme. It should work. But you won't see the bandit19 on the side like you usually do.
+
+Update: what also works is that, if you put the command you want to run on the local machine in double quotes and type that after the ssh command in the terminal, 
+it will run that command on the local machine for you. So use that to investigate the contents of the home directory and then print out the needed password
+Source: https://hackertarget.com/ssh-examples-tunnels/
